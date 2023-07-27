@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML JavaScript DOM</title>
+    </head>
+    <body>
+        
+        <script>
+            // create a html elements
+            var header = document.createElement('header');
+            // console.log(header);
+            // header.innerHTML = 'Header';
+            document.body.appendChild(header);
+            document.body.style.margin = '0px';
+            document.body.style.backgroundColor = '#f2f2f2';
+            
+
+            // add styling to header 
+            header.style.border = '1px solid #fc0057';
+            header.style.height = '160px';
+            header.style.width = '1440px';
+            header.style.lineHeight = '60px';
+            header.style.margin = 'auto';
+
+            var wrapper = document.createElement('section');
+            // console.log(wrapper);
+            header.appendChild(wrapper);
+            // wrapper.innerHTML = 'wrapper';
+            wrapper.style.border = '1px solid #7163d2';
+            wrapper.style.margin = '20px 60px';
+            wrapper.style.height = '97px';
+            wrapper.style.display = 'flex';
+            wrapper.style.justifyContent = 'start';
+            wrapper.style.alignItems = 'center';
+
+            logo = document.createElement('img');
+            logo.setAttribute('src','./img/apple-logo.png');
+
+            // console.log(logo);
+            wrapper.appendChild(logo);
+
+            logo.style.width = '150px';
+            
+            nav = document.createElement('nav');
+
+            // console.log(nav);
+
+            nav.innerHTML = 'Content';
+
+            wrapper.appendChild(nav);
+
+            nav.style.border = '1px solid #14bb90';
+            nav.style.height = '52px';
+            nav.style.width = '1080px';
+            nav.style.padding = '0 30px';
+            nav.style.margin = '0px 35px 0px 235px';
+
+            main = document.createElement('main');
+            // console.log(main);
+            // main.innerHTML = 'main container';
+
+            document.body.appendChild(main);
+            main.style.border = '1px solid #fc0057';
+            main.style.width = '1440px';
+            main.style.height = '525px';
+            main.style.margin = '10px auto';
+
+            var mainWrapper = document.createElement('section');
+            // console.log(mainWrapper);
+            main.appendChild(mainWrapper);
+            // wrapper.innerHTML = 'wrapper';
+            mainWrapper.style.border = '1px solid #7163d2';
+            mainWrapper.style.margin = '20px 60px';
+            mainWrapper.style.height = '488px';
+            mainWrapper.style.display = 'flex';
+            mainWrapper.style.justifyContent = 'start';
+            mainWrapper.style.alignItems = 'center';
+
+            var sidebar = document.createElement('aside');
+
+            // console.log(sidebar);
+            sidebar.innerHTML = 'Sidebar';
+            mainWrapper.appendChild(sidebar);
+
+            sidebar.style.border = '1px solid #34495c';
+            sidebar.style.width = '280px';
+            sidebar.style.height = '432px';
+            sidebar.style.margin = '0px 30px';
+            sidebar.style.padding = '20px 0px 0px 20px';
+
+            mainContent = document.createElement('section');
+            // console.log(mainContent);
+            mainContent.innerHTML = 'Main Content';
+
+            mainWrapper.appendChild(mainContent);
+
+            // styling to main content
+
+            mainContent.style.border = '1px solid #14bb90';
+            mainContent.style.width = '920px';
+            mainContent.style.height = '432px';
+            mainContent.style.margin = '0px 30px';
+            mainContent.style.padding = '20px 0 0 20px';
+
+            footer = document.createElement('footer');
+            // console.log(footer);
+            // footer.innerHTML = 'Footer';
+            document.body.appendChild(footer);
+
+            // styling to footer elements
+            footer.style.border = '1px solid #fc0057';
+            footer.style.width = '1440px';
+            footer.style.height = '200px';
+            footer.style.margin = '10px auto';
+
+            footerWrapper = document.createElement('section');
+            // console.log(footerWrapper);
+            // footerWrapper.innerHTML = 'Footer wrapper';
+            footer.appendChild(footerWrapper);
+
+            // styling for footer wrapper
+
+            footerWrapper.style.border = '1px solid #7163d2';
+            footerWrapper.style.height = '155px';
+            footerWrapper.style.margin = '20px 60px';
+
+            footerWrapper.style.display = 'flex';
+            footerWrapper.style.justifyContent = 'start';
+            footerWrapper.style.alignItems = 'center';
+
+            aside = document.createElement('aside');
+            // console.log(aside);
+            aside.innerHTML = 'sidebar';
+
+            footerWrapper.appendChild(aside);
+
+            aside.style.border = '1px solid #34495c';
+            aside.style.width = '280px';
+            aside.style.height = '100px';
+            aside.style.margin = '0px 30px';
+            aside.style.padding = '20px 0px 0px 20px';
+
+            footerContent =  document.createElement('section');
+            console.log(footerContent);
+            footerContent.innerHTML = 'Footer Content';
+
+            footerWrapper.appendChild(footerContent);
+
+            // styling for footer contenet
+            footerContent.style.border = '1px solid #14bb90';
+            footerContent.style.width = '920px';
+            footerContent.style.height = '100px';
+            footerContent.style.margin = '0px 30px';
+            footerContent.style.padding = '20px 0 0 20px';
+
+        </script>
+    </body>
+</html>
